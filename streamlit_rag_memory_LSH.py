@@ -16,7 +16,7 @@ sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 from langchain_chroma import Chroma
 
 #오픈AI API 키 설정
-os.environ["OPENAI_API_KEY"] = st.secrets['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']
+os.environ["OPENAI_API_KEY"] = st.secrets['OPENAI_API_KEY]
 
 #cache_resource로 한번 실행한 결과 캐싱해두기
 @st.cache_resource
